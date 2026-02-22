@@ -25,7 +25,7 @@ func nextInt() int {
     return sign * num
 }
 
-func Routine() {
+func Channel() {
     ch := make(chan int)
 
     go func() {
@@ -41,7 +41,7 @@ func Routine() {
 }
 
 func solve() {
-    Routine()
+    Channel()
 }
 
 func main() {
