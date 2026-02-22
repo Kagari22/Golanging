@@ -38,7 +38,7 @@ func Channel() {
         defer wg.Done()
         for i := 0; i < 5; i++ {
             ch <- i
-            fmt.Println("Send ", i, "\tNow:", time.Now().Format("15:04:05.999999999"))
+            fmt.Println("Send ", i, "\tNow:", time.Now().Format("15:04:05.999999999 "), "Len: ", len(ch), "Cap: ", cap(ch))
             time.Sleep(time.Second)
         }
         close(ch)
@@ -48,7 +48,7 @@ func Channel() {
     go func() {
         defer wg.Done()
         for e := range ch {
-            fmt.Println("Received ", e, "\tNow:", time.Now().Format("15:04:05.999999999"))
+            fmt.Println("Received ", e, "\tNow:", time.Now().Format("15:04:05.999999999 "), "Len: ", len(ch), "Cap: ", cap(ch))
             time.Sleep(4 * time.Second)
         }
     }()
