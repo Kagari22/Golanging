@@ -26,6 +26,7 @@ func nextInt() int {
     return sign * num
 }
 
+// 同步Channel
 func Channel() {
     ch := make(chan int)
     wg := sync.WaitGroup{}
