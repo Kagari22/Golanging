@@ -25,6 +25,7 @@ func Channel() {
                 fmt.Println("Received value: ", v)
                 sum += v
             case <-t:
+                // 将 channel 设置为 nil, 不再读写
                 ch = nil
                 fmt.Println("Ch was set nil, sum is: ", sum)
             }
