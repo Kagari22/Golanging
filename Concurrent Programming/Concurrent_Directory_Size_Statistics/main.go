@@ -1,5 +1,4 @@
 // 统计目录的文件数量和大小
-// go run main.go
 package main
 
 import (
