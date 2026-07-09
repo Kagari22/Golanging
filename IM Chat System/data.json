@@ -1,0 +1,92 @@
+{
+  "next_user_id": 4,
+  "next_message_id": 10,
+  "users": [
+    {
+      "id": 1,
+      "username": "Kagari",
+      "password_hash": "pbkdf2_sha256$120000$6CC+XeXkEbPtpppY7iEISA$aV9mVZ7HdyKDrWzwImNAxh4jxvW32oXkLQb5jIsPKnE",
+      "nickname": "Kagari",
+      "created_at": "2026-07-07T22:34:27.8723134+08:00"
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password_hash": "pbkdf2_sha256$120000$DtiEed/8mxeUXYC9yvfF/A$L2tjcEEBTffjLDT2cMPTFYsGdaxj6rNflaH5+06FzO4",
+      "nickname": "user",
+      "created_at": "2026-07-07T22:34:54.3864288+08:00"
+    },
+    {
+      "id": 3,
+      "username": "alice",
+      "password_hash": "pbkdf2_sha256$120000$jMdxAO44yhGZ6tbqJ1mENA$SexCp1flHRCUBEZarIngD8qk/+lJb+pd7JpTdUKJRAU",
+      "nickname": "ALICE",
+      "created_at": "2026-07-07T22:43:16.4240489+08:00"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "from_id": 1,
+      "to_id": 2,
+      "content": "Hello World",
+      "created_at": "2026-07-07T22:42:10.6984899+08:00"
+    },
+    {
+      "id": 2,
+      "from_id": 2,
+      "to_id": 1,
+      "content": "sb",
+      "created_at": "2026-07-07T22:42:15.3648169+08:00"
+    },
+    {
+      "id": 3,
+      "from_id": 1,
+      "to_id": 2,
+      "content": "你好",
+      "created_at": "2026-07-07T22:42:19.0879293+08:00"
+    },
+    {
+      "id": 4,
+      "from_id": 3,
+      "to_id": 1,
+      "content": "？？",
+      "created_at": "2026-07-07T22:43:40.1915555+08:00"
+    },
+    {
+      "id": 5,
+      "from_id": 1,
+      "to_id": 2,
+      "content": "123456",
+      "created_at": "2026-07-09T22:10:22.9228468+08:00"
+    },
+    {
+      "id": 6,
+      "from_id": 2,
+      "to_id": 1,
+      "content": "114514",
+      "created_at": "2026-07-09T22:10:46.4762936+08:00"
+    },
+    {
+      "id": 7,
+      "from_id": 2,
+      "to_id": 1,
+      "content": "1919810",
+      "created_at": "2026-07-09T22:10:51.6945876+08:00"
+    },
+    {
+      "id": 8,
+      "from_id": 2,
+      "to_id": 1,
+      "content": "12",
+      "created_at": "2026-07-09T22:10:53.2061945+08:00"
+    },
+    {
+      "id": 9,
+      "from_id": 2,
+      "to_id": 1,
+      "content": "22",
+      "created_at": "2026-07-09T22:10:54.1793298+08:00"
+    }
+  ]
+}
