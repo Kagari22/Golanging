@@ -1,4 +1,4 @@
-# Go IM Demo
+# IM Chat System
 
 这是一个用来学习 Go 的最小 IM 聊天系统后端，包含：
 
