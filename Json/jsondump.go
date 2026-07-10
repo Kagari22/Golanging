@@ -12,6 +12,7 @@ type User struct {
 	Age  int    `json:"age"`
 }
 
+// 把数据写入 json 文件中
 func main() {
 	user := User{
 		Name: "张三",
