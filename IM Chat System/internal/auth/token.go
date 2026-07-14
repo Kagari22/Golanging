@@ -44,7 +44,7 @@ func GenerateToken(secret string, userID int64, username string, ttl time.Durati
 	return unsigned + "." + signature, nil
 }
 
-// 解析并验证 token
+// 验证这个 token 是否合法, 并解析出里面的用户信息
 func ParseToken(secret, token string) (Claims, error) {
 	parts := strings.Split(token, ".")
 	if len(parts) != 3 {
@@ -79,6 +79,7 @@ func sign(secret, data string) string {
 	return base64.RawURLEncoding.EncodeToString(mac.Sum(nil))
 }
 
+// 从请求头里把 token 字符串抠出来
 func BearerToken(header string) (string, error) {
 	const prefix = "Bearer "
 	if !strings.HasPrefix(header, prefix) {
